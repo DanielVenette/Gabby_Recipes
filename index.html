@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Gabby Recipes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
+    h1 { text-align: center; margin-bottom: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+    .card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 2px 2px 6px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 4px 4px 12px rgba(0,0,0,0.15); }
+    .card a { text-decoration: none; color: #0073e6; font-weight: bold; font-size: 18px; }
+  </style>
 </head>
 <body>
   <h1>Gabby Recipes</h1>
-  <ul>
-    <li><a href="one-pan-teriyaki-chicken-broccoli-rice.html">One-Pan Teriyaki Chicken, Broccoli & Rice</a></li>
-    <li><a href="cheesy-turkey-veggie-pasta-bake.html">Cheesy Turkey & Veggie Pasta Bake</a></li>
-    <li><a href="baked-beef-spinach-rigatoni.html">Baked Beef & Spinach Rigatoni</a></li>
-    <li><a href="baked-beef-spinach-bowtie.html">Baked Beef & Spinach Bow Tie Pasta</a></li>
-  </ul>
+  <div class="grid">
+    <div class="card"><a href="one-pan-teriyaki-chicken-broccoli-rice.html">One-Pan Teriyaki Chicken, Broccoli & Rice</a></div>
+    <div class="card"><a href="cheesy-turkey-veggie-pasta-bake.html">Cheesy Turkey & Veggie Pasta Bake</a></div>
+    <div class="card"><a href="baked-beef-spinach-rigatoni.html">Baked Beef & Spinach Rigatoni</a></div>
+    <div class="card"><a href="baked-beef-spinach-bowtie.html">Baked Beef & Spinach Bow Tie Pasta</a></div>
+  </div>
 </body>
 </html>
